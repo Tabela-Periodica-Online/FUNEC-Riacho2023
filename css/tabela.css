@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    padding: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#menu{
+    background: white;
+    width: 102%;
+    height: 100px;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+div#container {
+    overflow-x: auto;
+}
+
+table {
+    border: 0px;
+    width: 1300px;
+    height: 10px;
+    border-collapse: collapse;
+}
+
+td,
+tr {
+    text-align: center;
+    height: 74px;
+    line-height: 45px;
+    width: 66px;
+}
+
+.specs {
+    width: 500px;
+}
+
+.nomeAtributo {
+    width: 230px;
+    height: 51px;
+    float: left;
+}
+
+.numeroAtributo {
+    width: 270px;
+}
+
+.elementos {
+    width: 400px;
+}
+
+th {
+    float: left;
+}
+
+#naoMetal {
+    border: 1px solid #bbff006e;
+    color: #b4d264;
+    background-color: #bbff006e;
+    border-radius: 4px;
+    outline: none;
+}
+
+#metalAlca {
+    border: 1px solid #ffae006e;
+    color: #f5c864;
+    background-color: #ffae006e;
+    border-radius: 4px;
+    outline: none;
+}
+
+#semiMetal {
+    border: 1px solid #00ffe16e;
+    color: #6ec8be;
+    background-color: #00ffe16e;
+    border-radius: 4px;
+    outline: none;
+}
+
+#outroMetal {
+    border: 1px solid #bed2d2b2;
+    color: #bed2d2;
+    background-color: #bed2d2b2;
+    border-radius: 4px;
+    outline: none;
+}
+
+#lantanideos {
+    border: 1px solid #96e1e16e;
+    color: #96e1e1;
+    background-color: #6ea5a5;
+    border-radius: 4px;
+    outline: none;
+}
+
+#gasNobre {
+    border: 1px solid #00a2ff6e;
+    color: #64b4e1;
+    background-color: #00a2ff6e;
+    border-radius: 4px;
+    outline: none;
+}
+
+#metalAlcaTe {
+    border: 1px solid #f0e65a6e;
+    color: #f0e65a;
+    background-color: #ffee006e;
+    border-radius: 4px;
+    outline: none;
+}
+
+#halogenio {
+    border: 1px solid #aae1ff6e;
+    color: #aae1ff;
+    background-color: #42bbfcd5;
+    border-radius: 4px;
+    outline: none;
+}
+
+#metalTrans {
+    border: 1px solid #f5afaf6e;
+    color: #f5afaf;
+    background-color: #ff00006e;
+    border-radius: 4px;
+    outline: none;
+}
+
+#actinidios {
+    border: 1px solid #e6bedc6e;
+    color: #e6bedc;
+    background-color: #ff00bf6e;
+    border-radius: 4px;
+    outline: none;
+}
+
+.es {
+    padding: 8px 16px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 66px;
+    height: 66px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.modal-open {
+    padding: 8px 16px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 66px;
+    height: 66px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: none;
+    animation: modal-open .5s;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin-top: 10px;
+    width: 37%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    border-radius: 4px;
+    z-index: 4;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal-header-nm {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: lawngreen;
+}
+
+.modal-header-gn {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #007fc9;
+}
+
+.modal-header-ma {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #ffae00;
+}
+
+.modal-header-mat {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #e2d300b2;
+}
+
+.modal-header-sm {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #00a39098;
+}
+
+.modal-header-h {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #42bbfcd5;
+}
+
+.modal-header-om {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #bed2d2b2;
+}
+
+.modal-header-mt {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #ce0303ce;
+}
+
+.modal-header-l {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #6ea5a5;
+}
+
+.modal-header-a {
+    font-weight: 500;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #ff00bf6e;
+}
+
+.n1-1 {
+    margin-left: 28px;
+}
+
+.n1-1,
+.n1-4 {
+    font-size: 20px;
+}
+
+.linha {
+    border-top: 1px solid gray;
+}
+
+.modal-content .modal-close {
+    float: right;
+    justify-content: center;
+    font-size: 20px;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    padding: 5px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-body {
+    color: 7b7b7b;
+    padding: 15px 0;
+}
+
+.modal-footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+@keyframes modal-open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    div#container {
+        display: flex;
+    }
+
+    .linha {
+        flex-direction: row;
+    }
+    
+    .specs{
+        width:100%;
+    }
+    
+    .modal-body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .modal-content {
+        width: 80%;
+        overflow: auto;
+    }
+
+    .nomeAtributo {
+        width: 150px;
+    }
+
+    .numeroAtributo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    div#container {
+        display: flex;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        overflow: auto;
+        height: 90%;
+    }
+    
+    .specs{
+        width: 100%;
+    }
+
+    .modal-close {
+        position: sticky;
+        float: right;
+        justify-content: center;
+        width: 40px;
+        height: 50px;
+    }
+
+    .nomeAtributo {
+        width: 200px;
+    }
+
+    .numeroAtributo {
+        width: 250px;
+    }
+
+}
