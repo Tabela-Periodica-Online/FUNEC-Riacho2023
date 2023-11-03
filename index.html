@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
     <link rel="stylesheet" href="./css/tabela.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <title>Tabela Periódica Online</title>
 </head>
 
 <body>
+    <div class="menu">
+        <img class="logo" src="./img/logo.png" width="200" height="100"><a href="#"></a>
+        <div class="tema">
+            <i class="material-symbols-outlined">light_mode</i>
+            <span class="switch_track"></span>
+            <i class="material-symbols-outlined">dark_mode</i>
+        </div>
+    </div>
     <center>
-    <div id="menu">
 
     </div>
         <br>
@@ -22,7 +30,7 @@
         <div id="container">
             <table>
                 <tr>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal1">1<br>H<br>1,0080</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal1">1<br>H<br>1,008</button></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -39,7 +47,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal2">2<br>He</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal2">2<br>He<br>4.002</button></td>
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal3">3<br>Li<br>6,94</button></td>
@@ -54,12 +62,12 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal5">5<br>B</button></td>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal6">6<br>C</button></td>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal7">7<br>N</button></td>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal8">8<br>O</button></td>
-                    <td><button id="halogenio" class="modal-open" data-modal="modal9">9<br>F</button></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal10">10<br>Ne</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal5">5<br>B<br>10.81</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal6">6<br>C<br>12.011</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal7">7<br>N<br>14.007</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal8">8<br>O<br>15.999</button></td>
+                    <td><button id="halogenio" class="modal-open" data-modal="modal9">9<br>F<br>18.998</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal10">10<br>Ne<br>20.18</button></td>
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal11">11<br>Na<br>20.180</button></td>
@@ -74,148 +82,177 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal13">13<br>Al</button></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal14">14<br>Si</button></td>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal15">15<br>P</button></td>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal16">16<br>S</button></td>
-                    <td><button id="halogenio" class="modal-open" data-modal="modal17">17<br>Cl</button></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal18">18<br>Ar</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal13">13<br>Al<br>26.981</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal14">14<br>Si<br>28.085</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal15">15<br>P<br>30.973</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal16">16<br>S<br>32.07</button></td>
+                    <td><button id="halogenio" class="modal-open" data-modal="modal17">17<br>Cl<br>35.45</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal18">18<br>Ar<br>39.948</button></td>
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal19">19<br>K<br>39.098</button></td>
                     <td><button id="metalAlcaTe" class="modal-open" data-modal="modal20">20<br>Ca<br>40.078</button></td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal21">21<br>Sc<br>44.955</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal22">22<br>Ti</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal23">23<br>V</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal24">24<br>Cr</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal25">25<br>Mn</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal26">26<br>Fe</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal27">27<br>Co</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal28">28<br>Ni</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal29">29<br>Cu</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal30">30<br>Zn</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal31">31<br>Ga</button></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal32">32<br>Ge</button></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal33">33<br>As</button></td>
-                    <td><button id="naoMetal" class="modal-open" data-modal="modal34">34<br>Se</button></td>
-                    <td><button id="halogenio" class="modal-open" data-modal="modal35">35<br>Br</button></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal36">36<br>Kr</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal22">22<br>Ti<br>47.867</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal23">23<br>V<br>50.942</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal24">24<br>Cr<br>51.996</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal25">25<br>Mn<br>54.938</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal26">26<br>Fe<br>55.845</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal27">27<br>Co<br>58.933</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal28">28<br>Ni<br>58.693</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal29">29<br>Cu<br>63.546</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal30">30<br>Zn<br>65.38</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal31">31<br>Ga<br>69.723</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal32">32<br>Ge<br>72.630</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal33">33<br>As<br>74.922</button></td>
+                    <td><button id="naoMetal" class="modal-open" data-modal="modal34">34<br>Se<br>78.971</button></td>
+                    <td><button id="halogenio" class="modal-open" data-modal="modal35">35<br>Br<br>79.904</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal36">36<br>Kr<br>83.798</button></td>
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal37">37<br>Rb<br>85.468</button></td>
                     <td><button id="metalAlcaTe" class="modal-open" data-modal="modal38">38<br>Sr<br>87,62</button></td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal39">39<br>Y<br>88.906</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal40">40<br>Zr</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal41">41<br>Nb</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal42">42<br>Mo</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal43">43<br>Tc</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal44">44<br>Ru</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal45">45<br>Rh</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal46">46<br>Pd</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal47">47<br>Ag</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal48">48<br>Cd</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal49">49<br>In</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal50">50<br>Sn</button></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal51">51<br>Sb</button></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal52">52<br>Te</button></td>
-                    <td><button id="halogenio" class="modal-open" data-modal="modal53">53<br>I</button></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal54">54<br>Xe</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal40">40<br>Zr<br>91.224</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal41">41<br>Nb<br>92.906</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal42">42<br>Mo<br>95.95</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal43">43<br>Tc<br>[98]</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal44">44<br>Ru<br>101.07</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal45">45<br>Rh<br>102.91</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal46">46<br>Pd<br>106.42</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal47">47<br>Ag<br>107.87</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal48">48<br>Cd<br>112.41</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal49">49<br>In<br>114.82</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal50">50<br>Sn<br>118.71</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal51">51<br>Sb<br>121.76</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal52">52<br>Te<br>127.60</button></td>
+                    <td><button id="halogenio" class="modal-open" data-modal="modal53">53<br>I<br>126.90</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal54">54<br>Xe<br>131.29</button></td>
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal55">55<br>Cs<br>132.91</button></td>
                     <td><button id="metalAlcaTe" class="modal-open" data-modal="modal56">56<br>Ba<br>137,33</button></td>
-                    <td><button id="lantanideos" class="es">Lat<br>57<br>71</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal72">72<br>Hf</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal73">73<br>Ta</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal74">74<br>W</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal75">75<br>Re</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal76">76<br>Os</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal77">77<br>Ir</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal78">78<br>Pt</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal79">79<br>Au</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal80">80<br>Hg</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal81">81<br>TI</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal82">82<br>Pb</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal83">83<br>Bi</button></td>
-                    <td><button id="semiMetal" class="modal-open" data-modal="modal84">84<br>Po</button></td>
-                    <td><button id="halogenio" class="modal-open" data-modal="modal85">85<br>At</button></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal86">86<br>Rn</button></td>
+                    <td><button id="lantanideos" class="es"><a class="left">Lant</a><br>57<br>71</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal72">72<br>Hf<br>178.49</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal73">73<br>Ta<br>180.95</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal74">74<br>W<br>183.84</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal75">75<br>Re<br>186.21</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal76">76<br>Os<br>190.23</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal77">77<br>Ir<br>192.22</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal78">78<br>Pt<br>195.08</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal79">79<br>Au<br>196.97</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal80">80<br>Hg<br>200.59</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal81">81<br>TI<br>204.38</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal82">82<br>Pb<br>207.2</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal83">83<br>Bi<br>208.98</button></td>
+                    <td><button id="semiMetal" class="modal-open" data-modal="modal84">84<br>Po<br>(209)</button></td>
+                    <td><button id="halogenio" class="modal-open" data-modal="modal85">85<br>At<br>(210)</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal86">86<br>Rn<br>(222)</button></td>
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal87">87<br>Fr<br>(223)</button></td>
                     <td><button id="metalAlcaTe" class="modal-open" data-modal="modal88">88<br>Ra<br>(226)</button></td>
-                    <td><button id="actinidios" class="es">Act<br>89<br>103</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal104">104<br>Rf</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal105">105<br>Db</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal106">106<br>Sg</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal107">107<br>Bh</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal108">108<br>Hs</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal109">109<br>Mt</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal110">110<br>Ds</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal111">111<br>Rg</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal112">112<br>Cn</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal113">113<br>Nh</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal114">114<br>FI</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal115">115<br>Mc</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal116">116<br>Lv</button></td>
-                    <td><button id="halogenio" class="modal-open" data-modal="modal117">117<br>Ts</button></td>
-                    <td><button id="gasNobre" class="modal-open" data-modal="modal118">118<br>Og</button></td>
+                    <td><button id="actinidios" class="es"><a class="left">Acti</a><br>89<br>103</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal104">104<br>Rf<br>(267)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal105">105<br>Db<br>(268)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal106">106<br>Sg<br>(269)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal107">107<br>Bh<br>(270)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal108">108<br>Hs<br>(277)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal109">109<br>Mt<br>(278)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal110">110<br>Ds<br>(281)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal111">111<br>Rg<br>(282)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal112">112<br>Cn<br>(285)</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal113">113<br>Nh<br>(286)</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal114">114<br>FI<br>(289)</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal115">115<br>Mc<br>(290)</button></td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal116">116<br>Lv<br>(293)</button></td>
+                    <td><button id="halogenio" class="modal-open" data-modal="modal117">117<br>Ts<br>(294)</button></td>
+                    <td><button id="gasNobre" class="modal-open" data-modal="modal118">118<br>Og<br>(294)</button></td>
                 </tr>
-                <tr>
+                <tr class="espaco">
                     <th colspan="18"></th>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal57">57<br>La</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal58">58<br>Ce</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal59">59<br>Pr</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal60">60<br>Nd</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal61">61<br>Pm</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal62">62<br>Sm</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal63">63<br>Eu</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal64">64<br>Gd</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal65">65<br>Tb</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal66">66<br>Dy</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal67">67<br>Ho</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal68">68<br>Er</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal69">69<br>Tm</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal70">70<br>Yb</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal71">71<br>Lu</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal57">57<br>La<br>138.91</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal58">58<br>Ce<br>140.12</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal59">59<br>Pr<br>140.91</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal60">60<br>Nd<br>144,24</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal61">61<br>Pm<br>(145)</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal62">62<br>Sm<br>150.36</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal63">63<br>Eu<br>151.96</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal64">64<br>Gd<br>157.25</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal65">65<br>Tb<br>158.93</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal66">66<br>Dy<br>162.50</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal67">67<br>Ho<br>164.93</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal68">68<br>Er<br>167.26</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal69">69<br>Tm<br>168.93</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal70">70<br>Yb<br>173.05</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal71">71<br>Lu<br>174.97</button></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal89">89<br>Ac</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal90">90<br>Th</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal91">91<br>Pa</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal92">92<br>U</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal93">93<br>Np</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal94">94<br>Pu</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal95">95<br>Am</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal96">96<br>Cm</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal97">97<br>Bk</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal98">98<br>Cf</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal99">99<br>Es</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal100">100<br>Fm</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal101">101<br>Md</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal102">102<br>No</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal103">103<br>Lr</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal89">89<br>Ac<br>(227)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal90">90<br>Th<br>232,04</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal91">91<br>Pa<br>231,04</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal92">92<br>U<br>238.03</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal93">93<br>Np<br>(237)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal94">94<br>Pu<br>(244)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal95">95<br>Am<br>(243)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal96">96<br>Cm<br>(247)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal97">97<br>Bk<br>(247)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal98">98<br>Cf<br>(251)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal99">99<br>Es<br>(252)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal100">100<br>Fm<br>(257)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal101">101<br>Md<br>(258)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal102">102<br>No<br>(259)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal103">103<br>Lr<br>(266)</button></td>
                 </tr>
             </table>
         </div>
-
+        <br>
         <!--Legendas-->
-        <div class="lgnds"id="lgds">
-
+        <div class="legendas" id="legendas">
+            <div class="legenda legenda_elemento_1">
+                Não Metais
+            </div>
+            <div class="legenda legenda_elemento_2">
+                Gases Nobres
+            </div>
+            <div class="legenda legenda_elemento_3">
+                Metais Alcalinos
+            </div>
+            <div class="legenda legenda_elemento_4">
+                Semimetais
+            </div>
+            <div class="legenda legenda_elemento_5">
+                Metais Alcalino-Terrosos
+            </div>
+            <div class="legenda legenda_elemento_6">
+                Halogênios
+            </div>
+            <div class="legenda legenda_elemento_7">
+                Metais de Transição
+            </div>
+            <div class="legenda legenda_elemento_8">
+                Outros Metais
+            </div> 
+            <div class="legenda legenda_elemento_9">
+                Lantanídeos
+            </div>
+            <div class="legenda legenda_elemento_10">
+                Actinídios
+            </div>
         </div>
 
         <!--Caixas de Informação-->
         <div class="modal" id="modal1">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>1</div>
                     <div class="n1-2">H</div>
@@ -284,7 +321,7 @@
 
         <div class="modal" id="modal2">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>2</div>
                     <div class="n1-2">He</div>
@@ -353,7 +390,7 @@
 
         <div class="modal" id="modal3">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-ma">
                     <div class="n1-1"><br>3</div>
                     <div class="n1-2">Li</div>
@@ -422,7 +459,7 @@
 
         <div class="modal" id="modal4">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mat">
                     <div class="n1-1"><br>4</div>
                     <div class="n1-2">Be</div>
@@ -491,7 +528,7 @@
 
         <div class="modal" id="modal5">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>5</div>
                     <div class="n1-2">B</div>
@@ -560,7 +597,7 @@
 
         <div class="modal" id="modal6">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>6</div>
                     <div class="n1-2">C</div>
@@ -629,7 +666,7 @@
 
         <div class="modal" id="modal7">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>7</div>
                     <div class="n1-2">N</div>
@@ -697,7 +734,7 @@
 
         <div class="modal" id="modal8">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>8</div>
                     <div class="n1-2">O</div>
@@ -766,7 +803,7 @@
 
         <div class="modal" id="modal9">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-h">
                     <div class="n1-1"><br>9</div>
                     <div class="n1-2">F</div>
@@ -835,7 +872,7 @@
 
         <div class="modal" id="modal10">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>10</div>
                     <div class="n1-2">Ne</div>
@@ -904,7 +941,7 @@
 
         <div class="modal" id="modal11">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-ma">
                     <div class="n1-1"><br>11</div>
                     <div class="n1-2">Na</div>
@@ -973,7 +1010,7 @@
 
         <div class="modal" id="modal12">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mat">
                     <div class="n1-1"><br>12</div>
                     <div class="n1-2">Mg</div>
@@ -1042,7 +1079,7 @@
 
         <div class="modal" id="modal13">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>13</div>
                     <div class="n1-2">Al</div>
@@ -1111,7 +1148,7 @@
 
         <div class="modal" id="modal14">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>14</div>
                     <div class="n1-2">Si</div>
@@ -1181,7 +1218,7 @@
 
         <div class="modal" id="modal15">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>15</div>
                     <div class="n1-2">P</div>
@@ -1250,7 +1287,7 @@
 
         <div class="modal" id="modal16">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>16</div>
                     <div class="n1-2">S</div>
@@ -1319,7 +1356,7 @@
 
         <div class="modal" id="modal17">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-h">
                     <div class="n1-1"><br>17</div>
                     <div class="n1-2">Cl</div>
@@ -1388,7 +1425,7 @@
 
         <div class="modal" id="modal18">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>18</div>
                     <div class="n1-2">Ar</div>
@@ -1456,7 +1493,7 @@
 
         <div class="modal" id="modal19">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-ma">
                     <div class="n1-1"><br>19</div>
                     <div class="n1-2">K</div>
@@ -1525,7 +1562,7 @@
 
         <div class="modal" id="modal20">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mat">
                     <div class="n1-1"><br>20</div>
                     <div class="n1-2">Ca</div>
@@ -1594,7 +1631,7 @@
 
         <div class="modal" id="modal21">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>21</div>
                     <div class="n1-2">Sc</div>
@@ -1663,7 +1700,7 @@
 
         <div class="modal" id="modal22">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>22</div>
                     <div class="n1-2">Ti</div>
@@ -1733,7 +1770,7 @@
 
         <div class="modal" id="modal23">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>23</div>
                     <div class="n1-2">V</div>
@@ -1802,7 +1839,7 @@
 
         <div class="modal" id="modal24">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>24</div>
                     <div class="n1-2">Cr</div>
@@ -1871,7 +1908,7 @@
 
         <div class="modal" id="modal25">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>25</div>
                     <div class="n1-2">Mn</div>
@@ -1940,7 +1977,7 @@
 
         <div class="modal" id="modal26">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>26</div>
                     <div class="n1-2">Fe</div>
@@ -2009,7 +2046,7 @@
 
         <div class="modal" id="modal27">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>27</div>
                     <div class="n1-2">Co</div>
@@ -2078,7 +2115,7 @@
 
         <div class="modal" id="modal28">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>28</div>
                     <div class="n1-2">Ni</div>
@@ -2147,7 +2184,7 @@
 
         <div class="modal" id="modal29">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>29</div>
                     <div class="n1-2">Cu</div>
@@ -2216,7 +2253,7 @@
 
         <div class="modal" id="modal30">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>30</div>
                     <div class="n1-2">Zn</div>
@@ -2285,7 +2322,7 @@
 
         <div class="modal" id="modal31">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>31</div>
                     <div class="n1-2">Ga</div>
@@ -2354,7 +2391,7 @@
 
         <div class="modal" id="modal32">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>32</div>
                     <div class="n1-2">Ge</div>
@@ -2423,7 +2460,7 @@
 
         <div class="modal" id="modal33">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>33</div>
                     <div class="n1-2">As</div>
@@ -2492,7 +2529,7 @@
 
         <div class="modal" id="modal34">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-nm">
                     <div class="n1-1"><br>34</div>
                     <div class="n1-2">Se</div>
@@ -2561,7 +2598,7 @@
 
         <div class="modal" id="modal35">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-h">
                     <div class="n1-1"><br>35</div>
                     <div class="n1-2">Br</div>
@@ -2630,7 +2667,7 @@
 
         <div class="modal" id="modal36">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>36</div>
                     <div class="n1-2">Kr</div>
@@ -2699,7 +2736,7 @@
 
         <div class="modal" id="modal37">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-ma">
                     <div class="n1-1"><br>37</div>
                     <div class="n1-2">Rb</div>
@@ -2768,7 +2805,7 @@
 
         <div class="modal" id="modal38">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mat">
                     <div class="n1-1"><br>38</div>
                     <div class="n1-2">Sr</div>
@@ -2837,7 +2874,7 @@
 
         <div class="modal" id="modal39">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>39</div>
                     <div class="n1-2">Y</div>
@@ -2906,7 +2943,7 @@
 
         <div class="modal" id="modal40">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>40</div>
                     <div class="n1-2">Zr</div>
@@ -2975,7 +3012,7 @@
 
         <div class="modal" id="modal41">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>41</div>
                     <div class="n1-2">Nb</div>
@@ -3044,7 +3081,7 @@
 
         <div class="modal" id="modal42">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>42</div>
                     <div class="n1-2">Mo</div>
@@ -3113,7 +3150,7 @@
 
         <div class="modal" id="modal43">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>43</div>
                     <div class="n1-2">Tc</div>
@@ -3182,7 +3219,7 @@
 
         <div class="modal" id="modal44">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>44</div>
                     <div class="n1-2">Ru</div>
@@ -3251,7 +3288,7 @@
 
         <div class="modal" id="modal45">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>45</div>
                     <div class="n1-2">Rh</div>
@@ -3320,7 +3357,7 @@
 
         <div class="modal" id="modal46">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>46</div>
                     <div class="n1-2">Pd</div>
@@ -3389,7 +3426,7 @@
 
         <div class="modal" id="modal47">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>47</div>
                     <div class="n1-2">Ag</div>
@@ -3458,7 +3495,7 @@
 
         <div class="modal" id="modal48">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>48</div>
                     <div class="n1-2">Cd</div>
@@ -3527,7 +3564,7 @@
 
         <div class="modal" id="modal49">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>49</div>
                     <div class="n1-2">In</div>
@@ -3596,7 +3633,7 @@
 
         <div class="modal" id="modal50">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>50</div>
                     <div class="n1-2">Sn</div>
@@ -3665,7 +3702,7 @@
 
         <div class="modal" id="modal51">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>51</div>
                     <div class="n1-2">Sb</div>
@@ -3734,7 +3771,7 @@
 
         <div class="modal" id="modal52">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>52</div>
                     <div class="n1-2">Te</div>
@@ -3803,7 +3840,7 @@
 
         <div class="modal" id="modal53">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-h">
                     <div class="n1-1"><br>53</div>
                     <div class="n1-2">I</div>
@@ -3872,7 +3909,7 @@
 
         <div class="modal" id="modal54">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>54</div>
                     <div class="n1-2">Xe</div>
@@ -3941,7 +3978,7 @@
 
         <div class="modal" id="modal55">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-ma">
                     <div class="n1-1"><br>55</div>
                     <div class="n1-2">Cs</div>
@@ -4010,7 +4047,7 @@
 
         <div class="modal" id="modal56">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mat">
                     <div class="n1-1"><br>56</div>
                     <div class="n1-2">Ba</div>
@@ -4079,7 +4116,7 @@
 
         <div class="modal" id="modal72">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>72</div>
                     <div class="n1-2">Hf</div>
@@ -4148,7 +4185,7 @@
 
         <div class="modal" id="modal73">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>73</div>
                     <div class="n1-2">Ta</div>
@@ -4217,7 +4254,7 @@
 
         <div class="modal" id="modal74">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>74</div>
                     <div class="n1-2">W</div>
@@ -4286,7 +4323,7 @@
 
         <div class="modal" id="modal75">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>75</div>
                     <div class="n1-2">Re</div>
@@ -4355,7 +4392,7 @@
 
         <div class="modal" id="modal76">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>76</div>
                     <div class="n1-2">Os</div>
@@ -4424,7 +4461,7 @@
 
         <div class="modal" id="modal77">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>77</div>
                     <div class="n1-2">Ir</div>
@@ -4493,7 +4530,7 @@
 
         <div class="modal" id="modal78">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>78</div>
                     <div class="n1-2">Pt</div>
@@ -4562,9 +4599,9 @@
 
         <div class="modal" id="modal79">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
-                    <div class="n1-1"><br>46</div>
+                    <div class="n1-1"><br>79</div>
                     <div class="n1-2">Au</div>
                     <div class="n1-3">Ouro</div>
                     <div class="n1-4">196.97</div>
@@ -4631,7 +4668,7 @@
 
         <div class="modal" id="modal80">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>80</div>
                     <div class="n1-2">Hg</div>
@@ -4700,7 +4737,7 @@
 
         <div class="modal" id="modal81">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>81</div>
                     <div class="n1-2">TI</div>
@@ -4769,7 +4806,7 @@
 
         <div class="modal" id="modal82">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>82</div>
                     <div class="n1-2">Pb</div>
@@ -4838,7 +4875,7 @@
 
         <div class="modal" id="modal83">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>83</div>
                     <div class="n1-2">Bi</div>
@@ -4907,7 +4944,7 @@
 
         <div class="modal" id="modal84">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-sm">
                     <div class="n1-1"><br>84</div>
                     <div class="n1-2">Po</div>
@@ -4976,7 +5013,7 @@
 
         <div class="modal" id="modal85">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-h">
                     <div class="n1-1"><br>85</div>
                     <div class="n1-2">At</div>
@@ -5045,7 +5082,7 @@
 
         <div class="modal" id="modal86">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>86</div>
                     <div class="n1-2">Rn</div>
@@ -5114,7 +5151,7 @@
 
         <div class="modal" id="modal87">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-ma">
                     <div class="n1-1"><br>87</div>
                     <div class="n1-2">Fr</div>
@@ -5183,7 +5220,7 @@
 
         <div class="modal" id="modal88">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mat">
                     <div class="n1-1"><br>88</div>
                     <div class="n1-2">Ra</div>
@@ -5252,7 +5289,7 @@
 
         <div class="modal" id="modal104">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>104</div>
                     <div class="n1-2">Rf</div>
@@ -5321,7 +5358,7 @@
 
         <div class="modal" id="modal105">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>105</div>
                     <div class="n1-2">Db</div>
@@ -5390,7 +5427,7 @@
 
         <div class="modal" id="modal106">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>106</div>
                     <div class="n1-2">Sg</div>
@@ -5459,7 +5496,7 @@
 
         <div class="modal" id="modal107">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>107</div>
                     <div class="n1-2">Bh</div>
@@ -5528,7 +5565,7 @@
 
         <div class="modal" id="modal108">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>108</div>
                     <div class="n1-2">Hs</div>
@@ -5597,7 +5634,7 @@
 
         <div class="modal" id="modal109">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>109</div>
                     <div class="n1-2">Mt</div>
@@ -5666,7 +5703,7 @@
 
         <div class="modal" id="modal110">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>110</div>
                     <div class="n1-2">Ds</div>
@@ -5735,7 +5772,7 @@
 
         <div class="modal" id="modal111">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>111</div>
                     <div class="n1-2">Rg</div>
@@ -5804,7 +5841,7 @@
 
         <div class="modal" id="modal112">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>112</div>
                     <div class="n1-2">Cn</div>
@@ -5873,7 +5910,7 @@
 
         <div class="modal" id="modal113">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>113</div>
                     <div class="n1-2">Nh</div>
@@ -5942,7 +5979,7 @@
 
         <div class="modal" id="modal114">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>114</div>
                     <div class="n1-2">Fl</div>
@@ -6011,7 +6048,7 @@
 
         <div class="modal" id="modal115">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>115</div>
                     <div class="n1-2">Mc</div>
@@ -6080,7 +6117,7 @@
 
         <div class="modal" id="modal116">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-om">
                     <div class="n1-1"><br>116</div>
                     <div class="n1-2">Lv</div>
@@ -6149,7 +6186,7 @@
 
         <div class="modal" id="modal117">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-h">
                     <div class="n1-1"><br>117</div>
                     <div class="n1-2">Ts</div>
@@ -6218,7 +6255,7 @@
 
         <div class="modal" id="modal118">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-gn">
                     <div class="n1-1"><br>118</div>
                     <div class="n1-2">Og</div>
@@ -6287,7 +6324,7 @@
 
         <div class="modal" id="modal57">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>57</div>
                     <div class="n1-2">La</div>
@@ -6356,7 +6393,7 @@
 
         <div class="modal" id="modal58">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>58</div>
                     <div class="n1-2">Ce</div>
@@ -6425,7 +6462,7 @@
 
         <div class="modal" id="modal59">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>59</div>
                     <div class="n1-2">Pr</div>
@@ -6494,7 +6531,7 @@
 
         <div class="modal" id="modal60">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>60</div>
                     <div class="n1-2">Nd</div>
@@ -6563,7 +6600,7 @@
 
         <div class="modal" id="modal61">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>61</div>
                     <div class="n1-2">Pm</div>
@@ -6632,7 +6669,7 @@
 
         <div class="modal" id="modal62">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-mt">
                     <div class="n1-1"><br>62</div>
                     <div class="n1-2">Sm</div>
@@ -6701,7 +6738,7 @@
 
         <div class="modal" id="modal63">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>63</div>
                     <div class="n1-2">Eu</div>
@@ -6770,7 +6807,7 @@
 
         <div class="modal" id="modal64">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>64</div>
                     <div class="n1-2">Gd</div>
@@ -6839,7 +6876,7 @@
 
         <div class="modal" id="modal65">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>65</div>
                     <div class="n1-2">Tb</div>
@@ -6908,7 +6945,7 @@
 
         <div class="modal" id="modal66">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>66</div>
                     <div class="n1-2">Dy</div>
@@ -6977,7 +7014,7 @@
 
         <div class="modal" id="modal67">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>67</div>
                     <div class="n1-2">Ho</div>
@@ -7046,7 +7083,7 @@
 
         <div class="modal" id="modal68">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>68</div>
                     <div class="n1-2">Er</div>
@@ -7115,7 +7152,7 @@
 
         <div class="modal" id="modal69">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>69</div>
                     <div class="n1-2">Tm</div>
@@ -7184,7 +7221,7 @@
 
         <div class="modal" id="modal70">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>70</div>
                     <div class="n1-2">Yb</div>
@@ -7253,7 +7290,7 @@
 
         <div class="modal" id="modal71">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-l">
                     <div class="n1-1"><br>71</div>
                     <div class="n1-2">Lu</div>
@@ -7322,7 +7359,7 @@
 
         <div class="modal" id="modal89">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>89</div>
                     <div class="n1-2">Ac</div>
@@ -7391,7 +7428,7 @@
 
         <div class="modal" id="modal90">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>90</div>
                     <div class="n1-2">Th</div>
@@ -7460,7 +7497,7 @@
 
         <div class="modal" id="modal91">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>91</div>
                     <div class="n1-2">Pa</div>
@@ -7529,7 +7566,7 @@
 
         <div class="modal" id="modal92">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>92</div>
                     <div class="n1-2">U</div>
@@ -7598,7 +7635,7 @@
 
         <div class="modal" id="modal93">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>93</div>
                     <div class="n1-2">Np</div>
@@ -7667,7 +7704,7 @@
 
         <div class="modal" id="modal94">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>94</div>
                     <div class="n1-2">Pu</div>
@@ -7736,7 +7773,7 @@
 
         <div class="modal" id="modal95">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>95</div>
                     <div class="n1-2">Am</div>
@@ -7805,7 +7842,7 @@
 
         <div class="modal" id="modal96">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>96</div>
                     <div class="n1-2">Cm</div>
@@ -7874,7 +7911,7 @@
 
         <div class="modal" id="modal97">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>97</div>
                     <div class="n1-2">Bk</div>
@@ -7943,7 +7980,7 @@
 
         <div class="modal" id="modal98">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>98</div>
                     <div class="n1-2">Cf</div>
@@ -8012,7 +8049,7 @@
 
         <div class="modal" id="modal99">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>99</div>
                     <div class="n1-2">Es</div>
@@ -8081,7 +8118,7 @@
 
         <div class="modal" id="modal100">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>100</div>
                     <div class="n1-2">Fm</div>
@@ -8150,7 +8187,7 @@
 
         <div class="modal" id="modal101">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>101</div>
                     <div class="n1-2">Md</div>
@@ -8219,7 +8256,7 @@
 
         <div class="modal" id="modal102">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>102</div>
                     <div class="n1-2">No</div>
@@ -8288,7 +8325,7 @@
 
         <div class="modal" id="modal103">
             <div class="modal-content">
-                <button class="icon modal-close"><i class="material-icons">close</i></button>
+                <button class="modal-close"><i class="material-symbols-outlined">cancel</i></button>
                 <div class="modal-header-a">
                     <div class="n1-1"><br>103</div>
                     <div class="n1-2">Lr</div>

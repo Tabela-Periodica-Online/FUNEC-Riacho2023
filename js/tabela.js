@@ -1,5 +1,9 @@
 var modalBtns = document.querySelectorAll(".modal-open")
 
+const _elements ={
+    tema: document.querySelector(".switch_track"),
+}
+
 modalBtns.forEach(function(btn){
     btn.onclick = function(){
         var modal = btn.getAttribute("data-modal")
@@ -25,3 +29,12 @@ window.onclick = function(e){
     }
 
 }
+
+_elements.tema.addEventListener("click", () => {
+    const modoescuro = _elements.tema.classList.toggle("switch_track--dark");
+
+    if(modoescuro)
+        document.documentElement.setAttribute("data-theme", "dark");
+    else
+        document.documentElement.setAttribute("data-theme", "light");
+});
