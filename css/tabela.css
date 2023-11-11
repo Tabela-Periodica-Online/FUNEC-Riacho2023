@@ -113,6 +113,11 @@
     box-shadow: var(--shadow-card);
 }
 
+.nav--hidden{
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+}
+
 .menu {
     padding-right: 20px;
     cursor: pointer;
@@ -127,12 +132,14 @@
 }
 
 .nav_link {
-    position: fixed;
+    position: absolute;
     width: 93%;
+    z-index: 9;
     top: 5.4rem;
     left: 18px;
     color: var(--clr-link);
     background: var(--clr-background-button);
+    transition: var(--transition);
 }
 
 .nav_link a {
@@ -141,10 +148,12 @@
     color: var(--clr-link);
     padding: 10px 0;
     background: var(--clr-background-button);
+    transition: var(--transition);
 }
 
 .nav_link a:hover {
     background-color: #c9d5e5;
+    transition: var(--transition);
 }
 
 .hide {
@@ -647,20 +656,12 @@ th {
     .numeroAtributo {
         width: 100px;
     }
-
-    .menu--hidden {
-        transform: translateY(-60px);
-    }
 }
 
 
 @media screen and (max-height: 480px) {
     div#container {
         display: flex;
-    }
-
-    .menu--hidden {
-        transform: translateY(-60px);
     }
 
     .modal-content {
@@ -704,10 +705,9 @@ th {
         width: 170px;
         height: 80px;
     }
-
 }
 
-@media (max-width: 858px) {
+@media (max-width: 862px) {
     .legendas {
         -webkit-column-count: 3;
         column-count: 3;
@@ -718,9 +718,21 @@ th {
         width: 4rem;
         border-radius: 1rem;
     }
+
+    .nav_link{
+        width: 95.5%;
+        top: 7.4rem;
+    }
+
 }
 
-@media (min-width: 858px) {
+@media (max-width: 768px) {
+    .nav_link{
+        width: 96.4%;
+    }
+}
+
+@media (min-width: 862px) {
     .nav_link {
         display: block;
         position: static;
@@ -737,6 +749,7 @@ th {
         border-radius: 3%;
         color: var(--clr-link);
         background: var(--clr-background-button);
+        transition: var(--transition);
     }
 
     .menu {
@@ -754,7 +767,28 @@ th {
         height: 50px;
     }
 
-    .checkbtn {
-        display: block;
+    .nav_link{
+        width: 92.5%;
+        top: 5.5rem;
+        left: 18px;
+        transition: var(--transition);
+    }
+}
+
+@media (max-width: 320px) {
+    .nav_link{
+        width: 91.4%;
+        top: 5.5rem;
+        left: 18px;
+        transition: var(--transition);
+    }
+}
+
+@media (max-width: 425px) {
+    .nav_link{
+        width: 93.4%;
+        top: 5.5rem;
+        left: 18px;
+        transition: var(--transition);
     }
 }
