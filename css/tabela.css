@@ -134,7 +134,7 @@
 .nav_link {
     position: absolute;
     width: 93%;
-    z-index: 9;
+    z-index: 2;
     top: 5.4rem;
     left: 18px;
     color: var(--clr-link);
@@ -228,6 +228,7 @@ div#container {
 }
 
 table {
+    z-index: 1;
     border: 0px;
     width: 1000px;
     height: 10px;
@@ -732,6 +733,12 @@ th {
     }
 }
 
+@media (min-width: 768px) {
+    .modal-content{
+        width: 50%;
+    }
+}
+
 @media (min-width: 862px) {
     .nav_link {
         display: block;
@@ -763,22 +770,13 @@ th {
         column-count: 2;
     }
     .logo {
-        width: 100px;
-        height: 50px;
+        width: 140px;
+        height: 80px;
     }
 
     .nav_link{
-        width: 92.5%;
-        top: 5.5rem;
-        left: 18px;
-        transition: var(--transition);
-    }
-}
-
-@media (max-width: 320px) {
-    .nav_link{
-        width: 91.4%;
-        top: 5.5rem;
+        width: 94.8%;
+        top: 7.3rem;
         left: 18px;
         transition: var(--transition);
     }
@@ -787,8 +785,20 @@ th {
 @media (max-width: 425px) {
     .nav_link{
         width: 93.4%;
-        top: 5.5rem;
-        left: 18px;
-        transition: var(--transition);
+        top: 7.3rem;
     }
 }
+
+
+@media (max-width: 375px) {
+    .nav_link{
+        width: 92.5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav_link{
+        width: 91.4%;
+    }
+}
+
