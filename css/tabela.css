@@ -128,20 +128,23 @@
 
 .nav_link {
     position: fixed;
-    width: 94%;
-    top: 5rem;
+    width: 93%;
+    top: 5.4rem;
     left: 18px;
-    background-color: lightblue;
+    color: var(--clr-link);
+    background: var(--clr-background-button);
 }
 
 .nav_link a {
     display: block;
     text-align: center;
+    color: var(--clr-link);
     padding: 10px 0;
+    background: var(--clr-background-button);
 }
 
 .nav_link a:hover {
-    background-color: lightcoral;
+    background-color: #c9d5e5;
 }
 
 .hide {
@@ -584,7 +587,7 @@ th {
     float: right;
     justify-content: center;
     font-size: 10px;
-    background: #efefef;
+    background: var(--clr-background);
     border: 0;
     outline: 0;
     padding: 5px 7px;
@@ -593,7 +596,6 @@ th {
 }
 
 .modal-body {
-    color: 7b7b7b;
     padding: 15px 0;
 }
 
@@ -706,6 +708,10 @@ th {
 }
 
 @media (max-width: 858px) {
+    .legendas {
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
     .switch_track {
         display: block;
         height: 2rem;
@@ -715,24 +721,22 @@ th {
 }
 
 @media (min-width: 858px) {
-    .legendas {
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-
     .nav_link {
         display: block;
         position: static;
         width: auto;
-        margin-right: 20px;
+        margin-right: 70px;
+        margin-left: 0px;
         color: var(--clr-link);
-        border-radius: 1%;
-        background: var(--clr-background-button);
+        background: none;
     }
 
     .nav_link a {
         display: inline-block;
         padding: 15px 20px;
+        border-radius: 3%;
+        color: var(--clr-link);
+        background: var(--clr-background-button);
     }
 
     .menu {
@@ -741,6 +745,10 @@ th {
 }
 
 @media (max-width: 540px) {
+    .legendas {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
     .logo {
         width: 100px;
         height: 50px;
