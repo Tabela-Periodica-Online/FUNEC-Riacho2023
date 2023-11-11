@@ -4,26 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" href="./css/tabela.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <title>Tabela Periódica Online</title>
+    <style>
+        .material-symbols-outlined{
+            font-size: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="menu">
-        <img class="logo" src="./img/logo.png" width="200" height="100"><a href="#"></a>
-        <div class="tema">
+    <header>
+        <nav class="nav">
+          <a href="home.html"><img src="/img/logo.png" class="logo"></a>
+  
+          <div class="menu">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+  
+          <div class="nav_link hide">
+            <a href="home.html" style="color: inherit;">Página Principal</a>
+            <a href="index.html" style="color: inherit;">Tabela Periódica</a>
+            <a href="index.html" style="color: inherit;">Junte os Elementos!</a>
+          </div>
+          
+          <div class="tema">
             <i class="material-symbols-outlined">light_mode</i>
             <span class="switch_track"></span>
             <i class="material-symbols-outlined">dark_mode</i>
         </div>
-    </div>
+        </nav>
+    </header>
+
     <center>
 
-    </div>
+        </div>
         <br>
         <br>
         <!--Elementos-->
@@ -71,7 +92,8 @@
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal11">11<br>Na<br>20.180</button></td>
-                    <td><button id="metalAlcaTe" class="modal-open" data-modal="modal12">12<br>Mg<br>24.305</button></td>
+                    <td><button id="metalAlcaTe" class="modal-open" data-modal="modal12">12<br>Mg<br>24.305</button>
+                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -91,7 +113,8 @@
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal19">19<br>K<br>39.098</button></td>
-                    <td><button id="metalAlcaTe" class="modal-open" data-modal="modal20">20<br>Ca<br>40.078</button></td>
+                    <td><button id="metalAlcaTe" class="modal-open" data-modal="modal20">20<br>Ca<br>40.078</button>
+                    </td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal21">21<br>Sc<br>44.955</button></td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal22">22<br>Ti<br>47.867</button></td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal23">23<br>V<br>50.942</button></td>
@@ -131,7 +154,8 @@
                 </tr>
                 <tr>
                     <td><button id="metalAlca" class="modal-open" data-modal="modal55">55<br>Cs<br>132.91</button></td>
-                    <td><button id="metalAlcaTe" class="modal-open" data-modal="modal56">56<br>Ba<br>137,33</button></td>
+                    <td><button id="metalAlcaTe" class="modal-open" data-modal="modal56">56<br>Ba<br>137,33</button>
+                    </td>
                     <td><button id="lantanideos" class="es"><a class="left">Lant</a><br>57<br>71</button></td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal72">72<br>Hf<br>178.49</button></td>
                     <td><button id="metalTrans" class="modal-open" data-modal="modal73">73<br>Ta<br>180.95</button></td>
@@ -153,19 +177,32 @@
                     <td><button id="metalAlca" class="modal-open" data-modal="modal87">87<br>Fr<br>(223)</button></td>
                     <td><button id="metalAlcaTe" class="modal-open" data-modal="modal88">88<br>Ra<br>(226)</button></td>
                     <td><button id="actinidios" class="es"><a class="left">Acti</a><br>89<br>103</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal104">104<br>Rf<br>(267)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal105">105<br>Db<br>(268)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal106">106<br>Sg<br>(269)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal107">107<br>Bh<br>(270)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal108">108<br>Hs<br>(277)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal109">109<br>Mt<br>(278)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal110">110<br>Ds<br>(281)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal111">111<br>Rg<br>(282)</button></td>
-                    <td><button id="metalTrans" class="modal-open" data-modal="modal112">112<br>Cn<br>(285)</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal113">113<br>Nh<br>(286)</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal114">114<br>FI<br>(289)</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal115">115<br>Mc<br>(290)</button></td>
-                    <td><button id="outroMetal" class="modal-open" data-modal="modal116">116<br>Lv<br>(293)</button></td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal104">104<br>Rf<br>(267)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal105">105<br>Db<br>(268)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal106">106<br>Sg<br>(269)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal107">107<br>Bh<br>(270)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal108">108<br>Hs<br>(277)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal109">109<br>Mt<br>(278)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal110">110<br>Ds<br>(281)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal111">111<br>Rg<br>(282)</button>
+                    </td>
+                    <td><button id="metalTrans" class="modal-open" data-modal="modal112">112<br>Cn<br>(285)</button>
+                    </td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal113">113<br>Nh<br>(286)</button>
+                    </td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal114">114<br>FI<br>(289)</button>
+                    </td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal115">115<br>Mc<br>(290)</button>
+                    </td>
+                    <td><button id="outroMetal" class="modal-open" data-modal="modal116">116<br>Lv<br>(293)</button>
+                    </td>
                     <td><button id="halogenio" class="modal-open" data-modal="modal117">117<br>Ts<br>(294)</button></td>
                     <td><button id="gasNobre" class="modal-open" data-modal="modal118">118<br>Og<br>(294)</button></td>
                 </tr>
@@ -176,21 +213,35 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal57">57<br>La<br>138.91</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal58">58<br>Ce<br>140.12</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal59">59<br>Pr<br>140.91</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal60">60<br>Nd<br>144,24</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal57">57<br>La<br>138.91</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal58">58<br>Ce<br>140.12</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal59">59<br>Pr<br>140.91</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal60">60<br>Nd<br>144,24</button>
+                    </td>
                     <td><button id="lantanideos" class="modal-open" data-modal="modal61">61<br>Pm<br>(145)</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal62">62<br>Sm<br>150.36</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal63">63<br>Eu<br>151.96</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal64">64<br>Gd<br>157.25</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal65">65<br>Tb<br>158.93</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal66">66<br>Dy<br>162.50</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal67">67<br>Ho<br>164.93</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal68">68<br>Er<br>167.26</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal69">69<br>Tm<br>168.93</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal70">70<br>Yb<br>173.05</button></td>
-                    <td><button id="lantanideos" class="modal-open" data-modal="modal71">71<br>Lu<br>174.97</button></td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal62">62<br>Sm<br>150.36</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal63">63<br>Eu<br>151.96</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal64">64<br>Gd<br>157.25</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal65">65<br>Tb<br>158.93</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal66">66<br>Dy<br>162.50</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal67">67<br>Ho<br>164.93</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal68">68<br>Er<br>167.26</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal69">69<br>Tm<br>168.93</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal70">70<br>Yb<br>173.05</button>
+                    </td>
+                    <td><button id="lantanideos" class="modal-open" data-modal="modal71">71<br>Lu<br>174.97</button>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
@@ -207,10 +258,14 @@
                     <td><button id="actinidios" class="modal-open" data-modal="modal97">97<br>Bk<br>(247)</button></td>
                     <td><button id="actinidios" class="modal-open" data-modal="modal98">98<br>Cf<br>(251)</button></td>
                     <td><button id="actinidios" class="modal-open" data-modal="modal99">99<br>Es<br>(252)</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal100">100<br>Fm<br>(257)</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal101">101<br>Md<br>(258)</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal102">102<br>No<br>(259)</button></td>
-                    <td><button id="actinidios" class="modal-open" data-modal="modal103">103<br>Lr<br>(266)</button></td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal100">100<br>Fm<br>(257)</button>
+                    </td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal101">101<br>Md<br>(258)</button>
+                    </td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal102">102<br>No<br>(259)</button>
+                    </td>
+                    <td><button id="actinidios" class="modal-open" data-modal="modal103">103<br>Lr<br>(266)</button>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -240,7 +295,7 @@
             </div>
             <div class="legenda legenda_elemento_8">
                 Outros Metais
-            </div> 
+            </div>
             <div class="legenda legenda_elemento_9">
                 Lantanídeos
             </div>
@@ -8392,9 +8447,24 @@
             </div>
         </div>
 
-        
+        <script>
 
-        <script src="./js/tabela.js"></script>
+            const menu = document.querySelector(".menu")
+            let lastScrollY = window.scrollY
+
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY) {
+                    menu.classList.add("menu--hidden")
+                } else {
+                    menu.classList.remove("menu--hidden")
+                }
+
+                lastScrollY = window.scrollY
+            })
+        </script>
+
+        <script src="./js/tabela.js">
+        </script>
 </body>
 
 </html>
