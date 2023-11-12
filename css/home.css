@@ -1,0 +1,73 @@
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: 'Gill Sans', 'Gill Sans MT';
+     text-decoration: none;
+     list-style: none;
+     box-sizing: border-box;
+ }
+
+ .home {
+     padding: 0 0 0 0;
+ }
+
+ .fundo1 {
+     width: 90%;
+     height: 490px;
+     top: 2rem;
+     left: 2rem;
+     opacity: 0.5;
+     z-index: 1;
+     position: relative;
+     box-shadow: var(--shadow-card);
+     border: 5px solid var(--clr-image-border);
+ }
+
+ .fundo2 {
+     width: 90%;
+     height: 490px;
+     top: 4rem;
+     left: 7.5rem;
+     opacity: 0.5;
+     z-index: 1;
+     position: relative;
+     box-shadow: var(--shadow-card);
+     border: 5px solid var(--clr-image-border);
+ }
+
+ .parte2 {
+     height: 600px;
+ }
+
+ .footer {
+     width: 100%;
+     height: 80px;
+     color: var(--clr-link);
+     background-color: var(--clr-background-button);
+     position: absolute;
+     bottom: -10;
+     font-size: 15px;
+     padding-top: 34px;
+     text-align: center;
+     opacity: 1;
+ }
+
+ .obj {
+     z-index: 3;
+     position: absolute;
+     width: 50%;
+     padding: 10px;
+     top: 26rem;
+     left: 7rem;
+     background-color: var(--clr-background);
+ }
+
+ .tabela {
+     z-index: 3;
+     position: absolute;
+     width: 50%;
+     padding: 10px;
+     top: 60rem;
+     left: 12.6rem;
+     background-color: var(--clr-background);
+ }

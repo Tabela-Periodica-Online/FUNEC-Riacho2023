@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    height: 80px;
+    color: var(--clr-link);
+    background-color: var(--clr-background-button);
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    font-size: 15px;
+    padding-top: 34px;
+    text-align: center;
+    opacity: 1;
+}
