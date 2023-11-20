@@ -30,16 +30,16 @@
     margin-bottom: 20px;
 }
 
-.logoexp{
+.logoexp {
     position: relative;
     background-color: var(--clr-background);
     width: 33%;
     height: 50%;
-    top: 5rem;
+    top: 3rem;
     left: 45rem;
 }
 
-.logo2{
+.logo2 {
     width: 400px;
     height: 100%;
 }
@@ -62,12 +62,12 @@
     background-color: var(--clr-background);
 }
 
-.abel{
+.abel {
     width: auto;
     padding: 10px;
     display: inline-block;
     top: 10rem;
-    left: 6.6%;
+    left: 5rem;
     position: absolute;
     background-color: var(--clr-background);
     text-align: center;
@@ -79,7 +79,7 @@
     border-radius: 50%;
 }
 
-.arthur{
+.arthur {
     width: auto;
     padding: 10px;
     display: inline-block;
@@ -96,7 +96,7 @@
     border-radius: 50%;
 }
 
-.gabriel{
+.gabriel {
     width: auto;
     padding: 10px;
     display: inline-block;
@@ -113,7 +113,7 @@
     border-radius: 50%;
 }
 
-.gabriela{
+.gabriela {
     width: auto;
     padding: 10px;
     display: inline-block;
@@ -130,11 +130,11 @@
     border-radius: 50%;
 }
 
-.pedro{
+.pedro {
     width: auto;
     padding: 10px;
     display: inline-block;
-    top: 29rem;
+    top: 29.5rem;
     left: 5rem;
     position: absolute;
     background-color: var(--clr-background);
@@ -147,11 +147,11 @@
     border-radius: 50%;
 }
 
-.samuel{
+.samuel {
     width: auto;
     padding: 10px;
     display: inline-block;
-    top: 29rem;
+    top: 29.5rem;
     left: 30%;
     position: absolute;
     background-color: var(--clr-background);
@@ -165,11 +165,11 @@
 }
 
 
-.vitor{
+.vitor {
     width: auto;
     padding: 10px;
     display: inline-block;
-    top: 29rem;
+    top: 29.5rem;
     left: 53.7%;
     position: absolute;
     background-color: var(--clr-background);
@@ -182,11 +182,11 @@
     border-radius: 50%;
 }
 
-.yalle{
+.yalle {
     width: auto;
     padding: 10px;
     display: inline-block;
-    top: 29rem;
+    top: 29.5rem;
     left: 77%;
     position: absolute;
     background-color: var(--clr-background);
@@ -213,3 +213,348 @@
     opacity: 1;
 }
 
+@media (max-width: 1024px) {
+
+    .exp {
+        left: 3rem;
+    }
+
+    .logoexp {
+        top: 13.6%;
+        left: 60%;
+        width: 35%;
+    }
+
+    .logo2 {
+        width: 330px;
+        height: 100%;
+    }
+
+    .equipe {
+        left: 3rem;
+    }
+
+    .abel {
+        left: 3rem;
+    }
+
+    .arthur {
+        left: 17rem;
+    }
+
+    .gabriel {
+        left: 31rem;
+    }
+
+    .gabriela {
+        left: 45rem;
+    }
+
+    .pedro {
+        left: 3rem;
+    }
+
+    .samuel {
+        left: 17rem;
+    }
+
+    .vitor {
+        left: 31rem;
+    }
+
+    .yalle {
+        left: 45rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .parte1{
+        left: 2rem;
+    }
+
+    .parte2{
+        left: 2rem;
+        height: 1200px;
+    }
+
+    .exp {
+        left: 2rem;
+    }
+
+    .logoexp {
+        top: 13.6%;
+        left: 60%;
+        width: 35%;
+    }
+
+    .logo2 {
+        width: 247px;
+        height: 100%;
+    }
+
+    .equipe {
+        left: 3rem;
+    }
+
+    .abel {
+        left: 3rem;
+    }
+
+    .arthur {
+        left: 17rem;
+    }
+
+    .gabriel {
+        left: 31rem;
+    }
+
+    .gabriela {
+        left: 3rem;
+        top: 29.5rem;
+    }
+
+    .pedro {
+        left: 17rem;
+    }
+
+    .samuel {
+        left: 31rem;
+    }
+
+    .vitor {
+        left: 9.8rem;
+        top: 49rem;
+    }
+
+    .yalle {
+        left: 24rem;
+        top: 49rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .parte1{
+        left: 1rem;
+    }
+
+    .parte2{
+        left: 1rem;
+        height: 2700px;
+    }
+
+    .exp {
+        left: 1.3rem;
+        width: 90%;
+    }
+
+    .logoexp {
+        top: 70%;
+        left: 8rem;
+        width: 36%;
+        height: 25%;
+    }
+
+    .logo2 {
+        width: 140px;
+        height: 80px;
+    }
+
+    .equipe {
+        left: 6rem;
+    }
+
+    .abel {
+        left: 6rem;
+    }
+
+    .arthur {
+        left: 6rem;
+        top: 29.5rem;
+    }
+
+    .gabriel {
+        left: 6rem;
+        top: 49rem;
+    }
+
+    .gabriela {
+        left: 6rem;
+        top: 68.5rem;
+    }
+
+    .pedro {
+        left: 6rem;
+        top: 88rem;
+    }
+
+    .samuel {
+        left: 6rem;
+        top: 107.5rem;
+    }
+
+    .vitor {
+        left: 6rem;
+        top: 127rem;
+    }
+
+    .yalle {
+        left: 6rem;
+        top: 146.5rem;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .parte1{
+        left: 1rem;
+    }
+
+    .parte2{
+        left: 1rem;
+        height: 2700px;
+    }
+
+    .exp {
+        top: 1rem;
+        left: 1.3rem;
+        width: 90%;
+    }
+
+    .logoexp {
+        top: 70%;
+        left: 6.5rem;
+        width: 40.5%;
+        height: 25%;
+    }
+
+    .logo2 {
+        width: 140px;
+        height: 80px;
+    }
+
+    .equipe {
+        left: 5rem;
+    }
+
+    .abel {
+        left: 5rem;
+    }
+
+    .arthur {
+        left: 5rem;
+        top: 29.5rem;
+    }
+
+    .gabriel {
+        left: 5rem;
+        top: 49rem;
+    }
+
+    .gabriela {
+        left: 5rem;
+        top: 68.5rem;
+    }
+
+    .pedro {
+        left: 5rem;
+        top: 88rem;
+    }
+
+    .samuel {
+        left: 5rem;
+        top: 107.5rem;
+    }
+
+    .vitor {
+        left: 5rem;
+        top: 127rem;
+    }
+
+    .yalle {
+        left: 5rem;
+        top: 146.5rem;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .parte1{
+        left: 1rem;
+    }
+
+    .parte2{
+        left: 1rem;
+        height: 2700px;
+    }
+
+    .exp {
+        top: 1rem;
+        left: 1rem;
+        width: 90%;
+    }
+
+    .logoexp {
+        top: 75%;
+        left: 5rem;
+        width: 47.5%;
+        height: 24%;
+    }
+
+    .logo2 {
+        width: 140px;
+        height: 80px;
+    }
+
+    .equipe {
+        left: 3.3rem;
+    }
+
+    .abel {
+        left: 3.3rem;
+    }
+
+    .arthur {
+        left: 3.3rem;
+        top: 29.5rem;
+    }
+
+    .gabriel {
+        left: 3.3rem;
+        top: 49rem;
+    }
+
+    .gabriela {
+        left: 3.3rem;
+        top: 68.5rem;
+    }
+
+    .pedro {
+        left: 3.3rem;
+        top: 88rem;
+    }
+
+    .samuel {
+        left: 3.3rem;
+        top: 107.5rem;
+    }
+
+    .vitor {
+        left: 3.3rem;
+        top: 127rem;
+    }
+
+    .yalle {
+        left: 3.3rem;
+        top: 146.5rem;
+    }
+    
+    .footer{
+        font-size: 12px;
+    }
+}

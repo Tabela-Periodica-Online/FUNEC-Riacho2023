@@ -13,8 +13,8 @@
  
 
  .fundo1 {
-     width: 90%;
-     height: 490px;
+     width: 96%;
+     height: 450px;
      top: 2rem;
      left: 2rem;
      z-index: 1;
@@ -24,18 +24,29 @@
  }
 
  .fundo2 {
-     width: 90%;
-     height: 490px;
+     width: 96%;
+     height: 450px;
      top: 4rem;
-     left: 7.5rem;
+     left: 2rem;
      z-index: 1;
      position: relative;
      box-shadow: var(--shadow-image);
      border: 3px solid var(--clr-image-border);
  }
 
- .parte2 {
-     height: 600px;
+ .fundo3{
+    width: 96%;
+    height: 450px;
+    top: 6rem;
+    left: 2rem;
+    z-index: 1;
+    position: relative;
+    box-shadow: var(--shadow-image);
+    border: 3px solid var(--clr-image-border);
+ }
+
+ .parte3{
+    height: 620px;
  }
 
  .footer {
@@ -46,7 +57,7 @@
      box-shadow: var(--shadow-footer);
      transition: var(--transition);
      position: absolute;
-     bottom: -10;
+     bottom: -100;
      font-size: 15px;
      padding-top: 34px;
      text-align: center;
@@ -54,25 +65,36 @@
  }
 
  .obj {
-     z-index: 3;
+     z-index: 1;
      position: absolute;
      width: 50%;
      padding: 10px;
      top: 26rem;
-     left: 7rem;
+     left: 9rem;
      background-color: var(--clr-background);
      transition: var(--transition);
  }
 
  .tabela {
-     z-index: 3;
+     z-index: 1;
      position: absolute;
      width: 50%;
      padding: 10px;
-     top: 56rem;
-     left: 12.6rem;
+     top: 50rem;
+     left: 9rem;
      background-color: var(--clr-background);
      transition: var(--transition);
+ }
+
+ .periodic{
+    z-index: 1;
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    top: 84rem;
+    left: 9rem;
+    background-color: var(--clr-background);
+    transition: var(--transition);
  }
 
  .tabela-link{
@@ -94,5 +116,134 @@
 
  .tabela-link:hover{
     background-color: #c9d5e5;
+    cursor: pointer;
     transition: var(--transition);
+ }
+
+ @media (max-width: 1024px){
+    .obj{
+        top: 77%;
+    }
+
+    .tabela{
+        top: 150%;
+        left: 11%;
+    }
+
+    .fundo1{
+        width: 94%;
+        left: 3%;
+    }
+
+    .fundo2{
+        width: 94%;
+        left: 3%;
+    }
+ }
+
+ @media (max-width: 768px){
+    .obj{
+        top: 67%;
+        left: 11%;
+    }
+
+    .tabela{
+        top: 130%;
+        left: 11%;
+    }
+
+    .fundo1{
+        width: 93%;
+        left: 3.4%;
+    }
+
+    .fundo2{
+        width: 93%;
+        left: 3.4%;
+    }
+    
+ }
+
+ @media (max-width: 425px){
+    .obj{
+        top: 61%;
+        width: 70%;
+        left: 11%;
+    }
+
+    .tabela{
+        top: 124%;
+        width: 70%;
+        left: 11%;
+    }
+
+    .fundo1{
+        width: 93%;
+        left: 4.2%;
+    }
+
+    .fundo2{
+        width: 93%;
+        left: 4.2%;
+    }
+    
+    .footer{
+        font-size: 12px;
+    }
+ }
+
+ @media (max-width: 375px){
+    .obj{
+        top: 53%;
+        width: 70%;
+        left: 11%;
+    }
+
+    .tabela{
+        top: 120%;
+        width: 70%;
+        left: 11%;
+    }
+
+    .fundo1{
+        width: 93%;
+        left: 4.2%;
+    }
+
+    .fundo2{
+        width: 93%;
+        left: 4.2%;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+ }
+
+ @media (max-width: 320px){
+    .obj{
+        top: 46%;
+        width: 70%;
+        left: 11%;
+    }
+
+    .tabela{
+        top: 118%;
+        width: 77%;
+        left: 11%;
+    }
+
+    .fundo1{
+        width: 93%;
+        left: 4.2%;
+    }
+
+    .fundo2{
+        width: 93%;
+        left: 4.2%;
+    }
+
+    .footer{
+        font-size: 11px;
+    }
  }

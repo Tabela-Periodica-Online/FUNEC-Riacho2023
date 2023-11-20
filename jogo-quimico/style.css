@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url('fundoGame2.png');
+}
+
+.jogo{
+    padding: 0 0 0 0;
+}
+
+header{
+    width: 100%;
+}
+
+#game-container {
+    position: absolute;
+    width: 70%;
+    top: 45%;
+    text-align: center;
+    background-color: var(--clr-periodic);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    color: var(--clr-font);
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    color: rgb(47, 0, 255)363; /* Cor do texto */
+    background-color: #000; /* Cor do contorno */
+    -webkit-background-clip: text; /* Para navegadores baseados em WebKit, como Chrome e Safari */
+    background-clip: text; /* Para navegadores modernos */
+}
+#question-container {
+    margin-bottom: 20px;
+}
+
+#answer {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    background-color: rgb(155, 219, 52); /* Cor do botão azul */
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Cor do botão azul mais escura no hover */
+}
+
+#result-container {
+    display: none;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--clr-font); /* Cor verde para mensagem de resultado correto */
+}
+
+@media (max-width: 768px){
+    #game-container{
+        top: 30%;
+    }
+}

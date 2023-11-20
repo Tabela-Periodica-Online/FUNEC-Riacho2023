@@ -1,0 +1,208 @@
+body{
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+     /* Define uma altura total para ocupar toda a tela */
+     height: 100vh;
+     /* Remove margens para evitar espaços em branco */
+     margin: 0;
+     /* Configuração básica de fonte e cor de texto */
+}
+
+.period{
+    padding: 0 0 0 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundoGame2.png');
+}
+.div-centralizada{
+    width: 50%;
+    background-color: var(--clr-periodic);
+    text-align: center;
+    height: 510px;
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 1.5%;
+    border: 1px solid black;
+    transition: var(--transition);
+}
+.periodic{
+    background: url('PERIÓDIC\ \(1\).png') center/cover;
+    width: 500px; /* Ajuste conforme necessário */
+    height: 500px; /* Ajuste conforme necessário */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.elemento{
+    width: 30px;
+    height: 30px;
+    background-color: #e74c3c;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 40px;
+    margin: 5px 0;
+    margin-left: 2px;
+    box-shadow: 10px 10px 20px rgba(1, 2, 3, 0.2);
+    border: 2px solid black;
+    border-radius: 25%
+}
+.elemento1 {
+    top: 0;
+    left: 0;
+}
+
+.elemento2 {
+    top: 0;/* Ajuste conforme necessário para a altura da div anterior + margem */
+    left: 0;
+    background-color: red;
+}
+
+.elemento3 {
+    top: 0; /* Ajuste conforme necessário para a altura da div anterior + margem */
+    left: 0;
+    background-color: beige;
+}
+.elemento4 {
+    top: 0;
+    left: 0; /* Centraliza na borda inferior */
+    background-color: green;
+}
+.elemento5 {
+    left: 0;
+    top: 0;
+    background-color: rosybrown;
+}
+
+.elemento6 {
+    left: 0;
+    top: 0;
+    background-color: rgb(102, 19, 19);
+}
+
+.elemento7 {
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 251, 0);
+
+}
+.elemento8 {
+    left: 0;
+    top: 0;
+    background-color: rgb(143, 188, 182);
+}
+.elemento9 {
+    left: 0;
+    top: 0;
+    background-color: rgb(143, 188, 182);
+}
+.elemento10 {
+    left: 0;
+    top: 0;
+    background-color: rgb(4, 70, 61);
+}
+.elemento11 {
+    left: 0;
+    top: 0;
+    background-color: rgb(111, 0, 255);
+}
+.elemento12 {
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 230, 0);
+}
+.elemento13 {
+    left: 0;
+    top: 0;
+    background-color: rgb(21, 255, 0);
+}
+.btn-jogar { 
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background-color: #91ff00;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease; 
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-jogar:hover {
+    background-color: #ff0000;
+}
+
+@media (max-width: 768px){
+    .periodic{
+        width: 400px;
+        height: 400px;
+    }
+    .div-centralizada{
+        width: 65%;
+    }
+}
+
+@media (max-width: 425px){
+    .periodic{
+        top: 20%;
+        left: 55%;
+        width: 260px;
+        height: 200px;
+    }
+
+    .div-centralizada{
+        width: 65%;
+    }
+
+    .btn-jogar{
+        left: 55%;
+    }
+}
+
+@media (max-width: 375px){
+    .periodic{
+        top: 20%;
+        left: 55%;
+        width: 260px;
+        height: 200px;
+    }
+
+    .div-centralizada{
+        width: 75%;
+    }
+
+    .btn-jogar{
+        left: 55%;
+    }
+}
+
+@media (max-width: 320px){
+    .periodic{
+        top: 20%;
+        left: 55%;
+        width: 260px;
+        height: 200px;
+    }
+
+    .div-centralizada{
+        width: 80%;
+    }
+
+    .btn-jogar{
+        left: 55%;
+    }
+}

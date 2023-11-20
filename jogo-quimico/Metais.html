@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos Elementos Químicos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/spessscimen/Press+Start+2P">
+    <link rel="stylesheet" href="../css/tabela.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    
+    <!--Icones-->
+    <style>
+        .material-symbols-outlined {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body onload="startGame()" class="jogo">
+    <header>
+        <nav class="nav" style="margin: 0 0 0 0">
+            <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+
+            <div class="menu">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+
+            <div class="nav_link hide">
+                <a href="../index.html" style="color: inherit;">Página Principal</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="../tabela.html" style="color: inherit;">Tabela Periódica</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Periódic.html" style="color: inherit;">Periódic</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="../sobre.html" style="color: inherit;">Sobre Nós</a>
+            </div>
+
+            <div class="tema">
+                <i class="material-symbols-outlined">light_mode</i>
+                <span class="switch_track"></span>
+                <i class="material-symbols-outlined">dark_mode</i>
+            </div>
+        </nav>
+    </header>
+
+    <div id="game-container">
+        <h1>🧪🕹️Metais🕹️🧪</h1>
+        <div id="question-container">
+            <p id="question">Símbolo:</p>
+            <input type="text" id="answer" placeholder="Digite o Nome">
+            <button onclick="checkAnswer()">Verificar</button>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+            <button onclick="nextQuestion()">Próxima Pergunta</button>
+        </div>
+    </div>
+    <script src="metais.js"></script>
+    <script src="../js/tabela.js"></script>
+</body>
+</html>

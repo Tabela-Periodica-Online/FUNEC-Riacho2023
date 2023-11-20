@@ -12,6 +12,7 @@
     --clr-background-modal: #ffffff;
     --clr-background-button: #2d3c51;
     --clr-background-footer: #e7e7e7; 
+    --clr-periodic: rgb(190, 190, 190);
 
     
     --clr-image-border: #2d3c51dc;
@@ -64,6 +65,7 @@
     --clr-background-footer: #141414;
     --clr-background-modal: #0f0f0f;
     --clr-background-button: #2d3c51;
+    --clr-periodic: #141414;
 
     --clr-image-border: #2d3c51;
     --clr-font: #ffffff;
@@ -127,6 +129,7 @@
     margin-right: -10px;
     background: var(--clr-background);
     box-shadow: var(--shadow-card);
+    transition: var(--transition);
 }
 
 .nav--hidden{
@@ -150,7 +153,7 @@
 .nav_link {
     position: absolute;
     width: 93%;
-    z-index: 2;
+    z-index: 5;
     top: 5.4rem;
     left: 18px;
     color: var(--clr-link);
@@ -738,15 +741,20 @@ th {
     }
 
     .nav_link{
-        width: 95.5%;
-        top: 7.4rem;
+        width: 100%;
+        top: 6.5rem;
     }
 
 }
 
 @media (max-width: 768px) {
+    .menu{
+        position: absolute;
+        left: 48.4%;
+    }
     .nav_link{
-        width: 96.4%;
+        width: 100%;
+        left: 0;
     }
 }
 
@@ -801,21 +809,22 @@ th {
 
 @media (max-width: 425px) {
     .nav_link{
-        width: 93.4%;
-        top: 7.3rem;
+        width: 100%;
+        left: 0;
+        top: 6.5rem;
     }
 }
 
 
 @media (max-width: 375px) {
     .nav_link{
-        width: 92.5%;
+        width: 100%;
     }
 }
 
 @media (max-width: 320px) {
     .nav_link{
-        width: 91.4%;
+        width: 100%;
     }
 }
 

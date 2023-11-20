@@ -3,22 +3,31 @@ var modalBtns = document.querySelectorAll(".modal-open");
 const menu1 = document.querySelector('.menu');
 const navLink = document.querySelector('.nav_link');
 
-const _elements ={
-    tema: document.querySelector(".switch_track"),
-}
-
 menu1.addEventListener('click', () => {
     navLink.classList.toggle('hide');
 });
+
+const _elements = {
+    tema: document.querySelector(".switch_track"),
+}
+
+//juro por deus que eu não aguento mais, esse trem não funciona de jeito nenhuuuuuuuuuum
+
+const tema = window.localStorage.getItem('data-theme');
+if (tema) document.documentElement.setAttribute('data-theme', tema);
 
 
 _elements.tema.addEventListener("click", () => {
     const modoescuro = _elements.tema.classList.toggle("switch_track--dark");
 
-    if (modoescuro)
+    if (modoescuro) {
         document.documentElement.setAttribute("data-theme", "dark");
-    else
+        localStorage.setItem('data-theme', 'dark');
+    }
+    else {
         document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", "light");
+    }
 });
 
 
