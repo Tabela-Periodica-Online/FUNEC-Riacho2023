@@ -275,6 +275,46 @@
     }
  }
 
+ @media (max-width: 360px){
+    .obj{
+        top: -16rem;
+        width: 80%;
+        left: 2rem;
+    }
+
+    .tabela{
+        top: 4rem;
+        width: 85%;
+        left: 1.6rem;
+    }
+
+    .periodic{
+        top: 43rem;
+        width: 80%;
+        left: 2rem;
+    }
+ }
+ 
+@media (max-width: 353px){
+    .obj{
+        top: -18rem;
+        width: 80%;
+        left: 2rem;
+    }
+
+    .tabela{
+        top: 4rem;
+        width: 85%;
+        left: 1.6rem;
+    }
+
+    .periodic{
+        top: 43rem;
+        width: 80%;
+        left: 2rem;
+    }
+}
+
  @media (max-width: 320px){
     .obj{
         top: -20rem;
