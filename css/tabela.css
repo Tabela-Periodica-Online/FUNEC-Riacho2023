@@ -498,7 +498,7 @@ th {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+    z-index: 6;
     display: none;
     animation: modal-open .5s;
 }
@@ -512,7 +512,7 @@ th {
     margin-right: auto;
     padding: 10px 25px;
     border-radius: 4px;
-    z-index: 4;
+    z-index: 7;
     overflow-y: auto;
     overflow-x: hidden;
 }

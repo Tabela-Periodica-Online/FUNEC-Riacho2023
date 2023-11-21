@@ -70,7 +70,7 @@
      background-color: var(--clr-background-footer);
      box-shadow: var(--shadow-footer);
      transition: var(--transition);
-     top: 250%;
+     bottom: -90rem;
      position: relative;
      font-size: 15px;
      padding-top: 34px;
