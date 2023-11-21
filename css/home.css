@@ -26,7 +26,7 @@
  .fundo2 {
      width: 96%;
      height: 450px;
-     top: 4rem;
+     top: 31.5rem;
      left: 2rem;
      z-index: 1;
      position: relative;
@@ -37,7 +37,7 @@
  .fundo3{
     width: 96%;
     height: 450px;
-    top: 6rem;
+    top: 61rem;
     left: 2rem;
     z-index: 1;
     position: relative;
@@ -45,8 +45,22 @@
     border: 3px solid var(--clr-image-border);
  }
 
+.parte1{
+    height: 10px;
+    top: 2rem;
+    z-index: 1;
+}
+
+.parte2{
+    height: 10px;
+    top: 10rem;
+    z-index: 1;
+}
+
  .parte3{
-    height: 620px;
+    height: 10px;
+    top: 24rem;
+    z-index: 1;
  }
 
  .footer {
@@ -56,8 +70,8 @@
      background-color: var(--clr-background-footer);
      box-shadow: var(--shadow-footer);
      transition: var(--transition);
+     top: 250%;
      position: absolute;
-     bottom: -100;
      font-size: 15px;
      padding-top: 34px;
      text-align: center;
@@ -66,10 +80,10 @@
 
  .obj {
      z-index: 1;
-     position: absolute;
+     position: relative;
      width: 50%;
      padding: 10px;
-     top: 26rem;
+     top: -10rem;
      left: 9rem;
      background-color: var(--clr-background);
      transition: var(--transition);
@@ -77,10 +91,10 @@
 
  .tabela {
      z-index: 1;
-     position: absolute;
+     position: relative;
      width: 50%;
      padding: 10px;
-     top: 50rem;
+     top: 13rem;
      left: 9rem;
      background-color: var(--clr-background);
      transition: var(--transition);
@@ -88,10 +102,10 @@
 
  .periodic{
     z-index: 1;
-    position: absolute;
+    position: relative;
     width: 50%;
     padding: 10px;
-    top: 84rem;
+    top: 47rem;
     left: 9rem;
     background-color: var(--clr-background);
     transition: var(--transition);
@@ -122,11 +136,19 @@
 
  @media (max-width: 1024px){
     .obj{
-        top: 69%;
+        top: -10rem;
     }
 
     .tabela{
-        top: 138%;
+        top: 13rem;
+    }
+
+    .periodic{
+        top: 47rem;
+    }
+
+    .footer{
+        top: 285%;
     }
 
     .fundo1{
@@ -147,15 +169,15 @@
 
  @media (max-width: 768px){
     .obj{
-        top: 62%;
+        top: -13rem;
     }
 
     .tabela{
-        top: 119%;
+        top: 6rem;
     }
 
     .periodic{
-        top: 230%;
+        top: 45rem;
     }
 
     .fundo1{
@@ -177,21 +199,21 @@
 
  @media (max-width: 425px){
     .obj{
-        top: 55%;
+        top: -16rem;
         width: 70%;
-        left: 11%;
+        left: 3rem;
     }
 
     .tabela{
-        top: 113%;
+        top: 5rem;
         width: 70%;
-        left: 11%;
+        left: 3rem;
     }
 
     .periodic{
-        top: 227%;
+        top: 45rem;
         width: 70%;
-        left: 11%;
+        left: 3rem;
     }
 
     .fundo1{
@@ -216,21 +238,21 @@
 
  @media (max-width: 375px){
     .obj{
-        top: 53%;
+        top: -16rem;
         width: 80%;
-        left: 11%;
+        left: 3rem;
     }
 
     .tabela{
-        top: 113%;
+        top: 5rem;
         width: 80%;
-        left: 11%;
+        left: 3rem;
     }
 
     .periodic{
-        top: 228%;
+        top: 45rem;
         width: 80%;
-        left: 11%;
+        left: 3rem;
     }
 
     .fundo1{
@@ -255,21 +277,21 @@
 
  @media (max-width: 320px){
     .obj{
-        top: 36%;
-        width: 70%;
-        left: 11%;
+        top: -20rem;
+        width: 80%;
+        left: 2rem;
     }
 
     .tabela{
-        top: 112%;
-        width: 89%;
-        left: 6%;
+        top: 4rem;
+        width: 85%;
+        left: 1.6rem;
     }
 
     .periodic{
-        top: 222%;
-        width: 77%;
-        left: 11%;
+        top: 43rem;
+        width: 80%;
+        left: 2rem;
     }
 
     .fundo1{

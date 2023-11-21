@@ -743,6 +743,7 @@ th {
     .nav_link{
         width: 100%;
         top: 6.5rem;
+        left: 0;
     }
 
 }
@@ -800,9 +801,9 @@ th {
     }
 
     .nav_link{
-        width: 94.8%;
-        top: 7.3rem;
-        left: 18px;
+        width: 100%;
+        top: 6.5rem;
+        left: 0rem;
         transition: var(--transition);
     }
 }
