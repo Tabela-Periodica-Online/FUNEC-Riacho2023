@@ -75,7 +75,11 @@
 
 .abel1 {
     width: 176px;
+
     height: 160px;
+    border: 3px solid var(--clr-background-button);
+    ;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -93,6 +97,7 @@
 .arthur1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -110,6 +115,7 @@
 .gabriel1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -127,6 +133,7 @@
 .gabriela1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -144,6 +151,7 @@
 .pedro1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -161,6 +169,7 @@
 .samuel1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -179,6 +188,7 @@
 .vitor1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
@@ -196,6 +206,7 @@
 .yalle1 {
     width: 176px;
     height: 160px;
+    border: 3px solid var(--clr-background-button);
     border-radius: 50%;
 }
 
